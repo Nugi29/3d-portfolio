@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nugitha Disas | Software Engineer & Full-Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Nugitha Disas - Software Engineering Undergraduate & Full-Stack Developer building reliable, modern and scalable applications.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Fixed Fullscreen 3D Canvas Background -->
+  <div class="canvas-wrapper">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- Minimal Initial Loader -->
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">Loading 3D Experience...</p>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="logo-badge">ND</span>
+        <span class="logo-text">Nugitha Disas</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#learning" class="nav-link">Focus</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-cv">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Get in Touch</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Content -->
+  <main class="main-content">
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-container">
+        <!-- Left: Floating Badges Side -->
+        <div class="hero-left">
+          <div class="floating-badge-group">
+            <div class="hero-stat-card card-exp">
+              <div class="stat-icon-wrapper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="stat-text">
+                <span class="stat-num">BIT @ UCSC</span>
+                <span class="stat-lbl">Software Engineering<br>Undergraduate</span>
+              </div>
+            </div>
+
+            <div class="hero-stat-card card-proj">
+              <div class="stat-icon-wrapper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="stat-text">
+                <span class="stat-num">Full-Stack</span>
+                <span class="stat-lbl">Spring Boot • Angular<br>React • Node.js</span>
+              </div>
+            </div>
+
+            <div class="hero-stat-card card-sat">
+              <div class="stat-icon-wrapper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="stat-text">
+                <span class="stat-num">Architecture</span>
+                <span class="stat-lbl">REST APIs • Cloud<br>DevOps & Clean Code</span>
+              </div>
+            </div>
+
+            <div class="hero-feature-pill">
+              <div class="code-bracket">&lt;/&gt;</div>
+              <div class="feature-bullets">
+                <span>Java / Spring Boot</span>
+                <span class="bullet-sep">•</span>
+                <span>Angular / React</span>
+                <span class="bullet-sep">•</span>
+                <span>Cloud & DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Main Hero Content -->
+        <div class="hero-right">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Software Engineer & Full-Stack Developer</span>
+          </div>
+
+          <h1 class="hero-title">
+            I build modern <br>
+            <span class="text-neon-glow">software</span> <br>
+            that solves real problems.
+          </h1>
+
+          <p class="hero-subtitle">
+            I'm <span class="highlight-name">Nugitha Disas</span>, a Software Engineering undergraduate and Full-Stack
+            Developer focused on building reliable, scalable and user-friendly web applications.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <span>Let’s Connect</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                </path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/Nugi29" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="#contact" class="social-icon" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="glass-card about-card">
+          <div class="card-header">
+            <div class="section-tag-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h2 class="card-title">About Me</h2>
+          </div>
+
+          <div class="about-wide-grid">
+            <div class="about-bio-col">
+              <p class="about-desc">
+                I’m a Software Engineering undergraduate at the University of Colombo School of Computing (UCSC) with a
+                strong passion for full-stack development and scalable software engineering.
+              </p>
+              <p class="about-desc">
+                I enjoy turning complex concepts into complete, high-performance web applications — from designing intuitive user interfaces and robust REST APIs to database architecture, security, and cloud deployment.
+              </p>
+              <p class="about-desc">
+                My primary focus revolves around Java and Spring Boot for enterprise-grade backend services, complemented by Angular and React on the frontend. I also actively explore cloud solutions, DevOps automation, system design, and AI-powered integrations.
+              </p>
+
+              <div class="about-action">
+                <a href="#contact" class="btn btn-secondary">
+                  <span>Connect With Me</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="#projects" class="btn btn-glass btn-sm">
+                  <span>Explore Work</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="about-info-col">
+              <div class="info-grid">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="info-details">
+                    <span class="info-label">Name</span>
+                    <span class="info-value">Nugitha Disas</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                  </div>
+                  <div class="info-details">
+                    <span class="info-label">Education</span>
+                    <span class="info-value">BIT Undergrad @ UCSC</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="info-details">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Sri Lanka</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="info-details">
+                    <span class="info-label">Availability</span>
+                    <span class="info-value status-available">
+                      <span class="dot-live"></span> Open to Internships
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-highlights-panel">
+                <div class="highlight-item">
+                  <div class="highlight-dot"></div>
+                  <div class="highlight-text">
+                    <strong>Full-Stack Architecture</strong>
+                    <span>End-to-end web system design & development</span>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-dot"></div>
+                  <div class="highlight-text">
+                    <strong>Enterprise Backend</strong>
+                    <span>Spring Boot, secure REST APIs & microservices</span>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-dot"></div>
+                  <div class="highlight-text">
+                    <strong>Modern DevOps & Cloud</strong>
+                    <span>Docker containerization & cloud deployment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="glass-card skills-card">
+          <div class="card-header">
+            <div class="section-tag-icon">
+              <span class="mono-symbol">&lt;/&gt;</span>
+            </div>
+            <h2 class="card-title">My Expertise & Skills</h2>
+          </div>
+
+          <div class="skills-wide-grid">
+            <!-- Left Column: Proficiency Meters -->
+            <div class="skills-proficiencies-col">
+              <h3 class="skills-subheading">Core Proficiencies</h3>
+
+              <div class="skills-list">
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span class="skill-name">Java / Spring Boot</span>
+                    <div class="skill-meta-right">
+                      <span class="skill-pct">90%</span>
+                      <span class="skill-level-badge">Strong</span>
+                    </div>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 90%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span class="skill-name">Angular / React</span>
+                    <div class="skill-meta-right">
+                      <span class="skill-pct">88%</span>
+                      <span class="skill-level-badge">Strong</span>
+                    </div>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 88%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span class="skill-name">JavaScript / TypeScript</span>
+                    <div class="skill-meta-right">
+                      <span class="skill-pct">88%</span>
+                      <span class="skill-level-badge">Strong</span>
+                    </div>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 88%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span class="skill-name">Database & REST APIs (MySQL / PostgreSQL / Mongo)</span>
+                    <div class="skill-meta-right">
+                      <span class="skill-pct">85%</span>
+                      <span class="skill-level-badge">Strong</span>
+                    </div>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 85%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span class="skill-name">AWS / Cloud Deployment & Docker</span>
+                    <div class="skill-meta-right">
+                      <span class="skill-pct">72%</span>
+                      <span class="skill-level-badge level-working">Working Knowledge</span>
+                    </div>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 72%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span class="skill-name">AI Integration (Spring AI / OpenAI API)</span>
+                    <div class="skill-meta-right">
+                      <span class="skill-pct">68%</span>
+                      <span class="skill-level-badge level-growing">Exploring & Growing</span>
+                    </div>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 68%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Categorized Ecosystem & Stack -->
+            <div class="skills-categories-col">
+              <h3 class="skills-subheading">Tech Ecosystem & Stack</h3>
+
+              <div class="skills-category-grid">
+                <div class="skill-cat-card">
+                  <div class="cat-card-header">
+                    <div class="cat-icon-badge">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                      </svg>
+                    </div>
+                    <span class="cat-title">Backend & APIs</span>
+                  </div>
+                  <div class="cat-tags">
+                    <span class="cat-tag">Java 17+</span>
+                    <span class="cat-tag">Spring Boot</span>
+                    <span class="cat-tag">Spring Security</span>
+                    <span class="cat-tag">Hibernate / JPA</span>
+                    <span class="cat-tag">REST APIs</span>
+                    <span class="cat-tag">WebSockets</span>
+                    <span class="cat-tag">JWT</span>
+                  </div>
+                </div>
+
+                <div class="skill-cat-card">
+                  <div class="cat-card-header">
+                    <div class="cat-icon-badge">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                      </svg>
+                    </div>
+                    <span class="cat-title">Frontend & Interfaces</span>
+                  </div>
+                  <div class="cat-tags">
+                    <span class="cat-tag">Angular</span>
+                    <span class="cat-tag">React.js</span>
+                    <span class="cat-tag">TypeScript</span>
+                    <span class="cat-tag">JavaScript (ES6+)</span>
+                    <span class="cat-tag">HTML5 / CSS3</span>
+                    <span class="cat-tag">Tailwind CSS</span>
+                    <span class="cat-tag">Responsive UI</span>
+                  </div>
+                </div>
+
+                <div class="skill-cat-card">
+                  <div class="cat-card-header">
+                    <div class="cat-icon-badge">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                      </svg>
+                    </div>
+                    <span class="cat-title">Databases & Storage</span>
+                  </div>
+                  <div class="cat-tags">
+                    <span class="cat-tag">MySQL</span>
+                    <span class="cat-tag">PostgreSQL</span>
+                    <span class="cat-tag">MongoDB</span>
+                    <span class="cat-tag">Sequelize</span>
+                    <span class="cat-tag">Query Optimization</span>
+                  </div>
+                </div>
+
+                <div class="skill-cat-card">
+                  <div class="cat-card-header">
+                    <div class="cat-icon-badge">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                      </svg>
+                    </div>
+                    <span class="cat-title">Cloud, DevOps & AI</span>
+                  </div>
+                  <div class="cat-tags">
+                    <span class="cat-tag">Docker</span>
+                    <span class="cat-tag">AWS EC2 / S3</span>
+                    <span class="cat-tag">Git / GitHub</span>
+                    <span class="cat-tag">Postman</span>
+                    <span class="cat-tag">Spring AI</span>
+                    <span class="cat-tag">OpenAI API</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work (Projects) Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+
+        <div class="section-title-row">
+          <div class="title-left">
+            <div class="section-tag-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h2 class="section-heading">Selected Work</h2>
+          </div>
+          <a href="https://github.com/Nugi29" target="_blank" rel="noopener noreferrer" class="link-more">
+            <span>View GitHub Repositories</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Pol-Kole RMS -->
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/polkole.jpg" alt="Pol-Kole RMS - Restaurant & Hospitality Management"
+                class="project-img" loading="lazy">
+              <span class="project-badge">Full-Stack System</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Pol-Kole RMS</h3>
+              <p class="project-description">
+                A full-stack restaurant and hospitality management system designed to manage restaurant operations, room
+                services, orders, tables, kitchen workflows, billing and staff activities with AI insights.
+              </p>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Angular</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">WebSockets</span>
+                  <span class="tech-tag">Spring AI</span>
+                  <span class="tech-tag">AWS</span>
+                </div>
+                <a href="https://github.com/Nugi29" target="_blank" rel="noopener noreferrer" class="btn-circle-action"
+                  aria-label="Pol-Kole RMS Details">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: IMS — Inventory Management System -->
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/ims.jpg" alt="IMS - Inventory Management System" class="project-img" loading="lazy">
+              <span class="project-badge">Full-Stack Web App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">IMS — Inventory Management System</h3>
+              <p class="project-description">
+                A modern inventory management system for managing items, stock operations, purchase orders (POs), goods
+                receiving (GRNs), users, dashboard analytics and business workflows.
+              </p>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Sequelize</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                </div>
+                <a href="https://github.com/Nugi29" target="_blank" rel="noopener noreferrer" class="btn-circle-action"
+                  aria-label="IMS Details">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Doc Wise -->
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/docwise.jpg" alt="Doc Wise - AI / Healthcare Web Application" class="project-img"
+                loading="lazy">
+              <span class="project-badge">Healthcare Web App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Doc Wise</h3>
+              <p class="project-description">
+                A modern web application concept focused on making healthcare information and document management more
+                accessible through a streamlined, user-friendly digital experience.
+              </p>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">PayHere</span>
+                </div>
+                <a href="https://github.com/Nugi29" target="_blank" rel="noopener noreferrer" class="btn-circle-action"
+                  aria-label="Doc Wise Details">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- My Work Process Section -->
+    <section id="process" class="section process-section">
+      <div class="container">
+
+        <div class="section-title-row">
+          <div class="title-left">
+            <div class="section-tag-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h2 class="section-heading">My Work Process</h2>
+          </div>
+        </div>
+
+        <div class="glass-card process-card-wrapper">
+          <div class="process-track-line"></div>
+
+          <div class="process-grid">
+
+            <!-- Step 1 -->
+            <div class="process-step">
+              <div class="step-icon-node">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <span class="step-num">01</span>
+              <h4 class="step-title">Discover</h4>
+              <p class="step-desc">Understand the problem, requirements and target users.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step">
+              <div class="step-icon-node">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </div>
+              <span class="step-num">02</span>
+              <h4 class="step-title">Plan</h4>
+              <p class="step-desc">Define the architecture, technology stack, database and development plan.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step">
+              <div class="step-icon-node">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <span class="step-num">03</span>
+              <h4 class="step-title">Design</h4>
+              <p class="step-desc">Create clean and intuitive interfaces focused on usability and user experience.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="process-step">
+              <div class="step-icon-node">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <span class="step-num">04</span>
+              <h4 class="step-title">Develop</h4>
+              <p class="step-desc">Build maintainable frontend and backend applications using modern development
+                practices.</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="process-step">
+              <div class="step-icon-node">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <span class="step-num">05</span>
+              <h4 class="step-title">Test</h4>
+              <p class="step-desc">Test functionality, APIs, performance and common edge cases.</p>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="process-step">
+              <div class="step-icon-node">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                  </path>
+                  <path
+                    d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                  </path>
+                </svg>
+              </div>
+              <span class="step-num">06</span>
+              <h4 class="step-title">Deploy</h4>
+              <p class="step-desc">Deploy applications using cloud and modern DevOps practices and continuously improve
+                them.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Continuous Growth & Engineering Focus Section -->
+    <section id="learning" class="section testimonials-stats-section">
+      <div class="container grid-2-col">
+
+        <!-- Left: Continuous Growth Card -->
+        <div class="glass-card testimonial-card">
+          <div class="card-header">
+            <div class="section-tag-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 12l-4-4-4 4"></path>
+                <path d="M12 16V8"></path>
+              </svg>
+            </div>
+            <h2 class="card-title">Continuous Growth</h2>
+          </div>
+
+          <div class="testimonial-content">
+            <div class="learning-quote-box">
+              <p class="quote-text">
+                "I’m continuously learning and improving my skills through personal projects, university coursework at
+                UCSC, software engineering practice and real-world application development."
+              </p>
+              <div class="building-notice">
+                <span class="dot-live"></span>
+                <span>Currently building & open to collaboration on software engineering projects and
+                  internships.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Core Engineering Competencies -->
+        <div class="glass-card stats-card">
+          <div class="card-header">
+            <div class="section-tag-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h2 class="card-title">Engineering Focus</h2>
+          </div>
+
+          <div class="stats-grid-4">
+            <div class="stat-box">
+              <span class="stat-large-val">Full-Stack</span>
+              <span class="stat-label-text">Web Systems</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-large-val">Spring Boot</span>
+              <span class="stat-label-text">Backend & APIs</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-large-val">Angular / React</span>
+              <span class="stat-label-text">Frontend Apps</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-large-val">Cloud & DevOps</span>
+              <span class="stat-label-text">AWS & Docker</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+
+        <div class="glass-card contact-main-card">
+          <div class="contact-grid">
+
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+              <div class="contact-header-tag">
+                <div class="section-tag-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </div>
+                <h2 class="contact-title">Let’s Build Something Great</h2>
+              </div>
+
+              <p class="contact-subtitle">
+                Have a project idea, collaboration opportunity or software engineering internship opportunity? I’d love
+                to connect and discuss how we can build something useful together.
+              </p>
+
+              <div class="contact-quick-btn">
+                <a href="https://github.com/Nugi29" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-sm">
+                  <span>Visit GitHub</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="contact-entries">
+                <div class="contact-entry">
+                  <div class="entry-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                  </div>
+                  <div class="entry-content">
+                    <span class="entry-label">GitHub</span>
+                    <a href="https://github.com/Nugi29" target="_blank" rel="noopener noreferrer"
+                      class="entry-val">github.com/Nugi29</a>
+                  </div>
+                </div>
+
+                <div class="contact-entry">
+                  <div class="entry-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="entry-content">
+                    <span class="entry-label">Location</span>
+                    <span class="entry-val">Sri Lanka</span>
+                  </div>
+                </div>
+
+                <div class="contact-entry">
+                  <div class="entry-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                  </div>
+                  <div class="entry-content">
+                    <span class="entry-label">Availability</span>
+                    <span class="entry-val status-available">
+                      <span class="dot-live"></span> Open to Internship Opportunities
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Form Panel -->
+            <div class="contact-form-panel">
+              <form class="contact-form" id="contact-form" onsubmit="return false;">
+                <div class="form-row form-grid-2">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Your Email" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" class="form-input" placeholder="Opportunity / Project Collaboration"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea id="message" class="form-input form-textarea" rows="4"
+                    placeholder="Hello Nugitha, I'd like to discuss..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit" id="submit-btn">
+                  <span>Send Message</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+                <div id="form-msg" class="form-status-msg"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-badge">ND</span>
+        <div class="footer-brand-meta">
+          <span class="logo-text">Nugitha Disas</span>
+          <span class="footer-role">Software Engineer & Full-Stack Developer</span>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 Nugitha Disas. All rights reserved.
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a href="#hero" class="btn-scroll-top" id="scroll-top-btn" aria-label="Scroll to Top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
